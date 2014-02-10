@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AcctUpdatesDlg.h" />
+    <ClInclude Include="calendar.h" />
+    <ClInclude Include="client2.h" />
+    <ClInclude Include="client2Dlg.h" />
+    <ClInclude Include="CommissionReport.h" />
+    <ClInclude Include="CommonDefs.h" />
+    <ClInclude Include="Contract.h" />
+    <ClInclude Include="dealHttp.h" />
+    <ClInclude Include="DlgAccount.h" />
+    <ClInclude Include="DlgAlgoParams.h" />
+    <ClInclude Include="DlgComboLegs.h" />
+    <ClInclude Include="DlgConnect.h" />
+    <ClInclude Include="DlgExtOrd.h" />
+    <ClInclude Include="DlgFAAllocationInfo.h" />
+    <ClInclude Include="DlgFinancialAdvisor.h" />
+    <ClInclude Include="DlgLogConfig.h" />
+    <ClInclude Include="DlgMktDepth.h" />
+    <ClInclude Include="DlgNewsBulletins.h" />
+    <ClInclude Include="DlgOrder.h" />
+    <ClInclude Include="DlgScanner.h" />
+    <ClInclude Include="DlgSmartComboRoutingParams.h" />
+    <ClInclude Include="DlgUnderComp.h" />
+    <ClInclude Include="EClient.h" />
+    <ClInclude Include="EClientSocket.h" />
+    <ClInclude Include="EClientSocketBase.h" />
+    <ClInclude Include="EClientSocketBaseImpl.h" />
+    <ClInclude Include="EWrapper.h" />
+    <ClInclude Include="Execution.h" />
+    <ClInclude Include="HScrollListBox.h" />
+    <ClInclude Include="IBString.h" />
+    <ClInclude Include="MdSpi.h" />
+    <ClInclude Include="Order.h" />
+    <ClInclude Include="OrderState.h" />
+    <ClInclude Include="PicDlg.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="RptFilterDlg.h" />
+    <ClInclude Include="ScannerSubscription.h" />
+    <ClInclude Include="shared_ptr.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TagValue.h" />
+    <ClInclude Include="ThostFtdcMdApi.h" />
+    <ClInclude Include="ThostFtdcTraderApi.h" />
+    <ClInclude Include="ThostFtdcUserApiDataType.h" />
+    <ClInclude Include="ThostFtdcUserApiStruct.h" />
+    <ClInclude Include="TraderSpi.h" />
+    <ClInclude Include="TwsSocketClientErrors.h" />
+    <ClInclude Include="Weixin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AcctUpdatesDlg.cpp" />
+    <ClCompile Include="calendar.cpp" />
+    <ClCompile Include="client2.cpp" />
+    <ClCompile Include="client2Dlg.cpp" />
+    <ClCompile Include="dealHttp.cpp" />
+    <ClCompile Include="DlgAccount.cpp" />
+    <ClCompile Include="DlgAlgoParams.cpp" />
+    <ClCompile Include="DlgComboLegs.cpp" />
+    <ClCompile Include="DlgConnect.cpp" />
+    <ClCompile Include="DlgExtOrd.cpp" />
+    <ClCompile Include="DlgFAAllocationInfo.cpp" />
+    <ClCompile Include="DlgFinancialAdvisor.cpp" />
+    <ClCompile Include="DlgLogConfig.cpp" />
+    <ClCompile Include="DlgMktDepth.cpp" />
+    <ClCompile Include="DlgNewsBulletins.cpp" />
+    <ClCompile Include="DlgOrder.cpp" />
+    <ClCompile Include="DlgScanner.cpp" />
+    <ClCompile Include="DlgSmartComboRoutingParams.cpp" />
+    <ClCompile Include="DlgUnderComp.cpp" />
+    <ClCompile Include="EClientSocket.cpp" />
+    <ClCompile Include="EClientSocketBase.cpp" />
+    <ClCompile Include="HScrollListBox.cpp" />
+    <ClCompile Include="MdSpi.cpp" />
+    <ClCompile Include="PicDlg.cpp" />
+    <ClCompile Include="RptFilterDlg.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+    <ClCompile Include="testMdApi.cpp" />
+    <ClCompile Include="testTraderApi.cpp" />
+    <ClCompile Include="trade.cpp" />
+    <ClCompile Include="TraderSpi.cpp" />
+    <ClCompile Include="Weixin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\client2.ico" />
+    <None Include="res\client2.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="res\thostmduserapi.lib" />
+    <Library Include="res\thosttraderapi.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="client2.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AA05414C-05F7-4CE2-8082-B829CF4408EF}</ProjectGuid>
+    <RootNamespace>trade</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <EmbedManifest>true</EmbedManifest>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\new01\new01\ThostTraderApi;C:\new01\new01\Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="client2.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
